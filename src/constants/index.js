@@ -1,7 +1,12 @@
 // Project data structure
 import skillstackImage from "@/assets/images/projects/sheep.png";
-import skillstackVideo from "@/assets/images/projects/mv-vid.webm";
+import skillstackVideo from "@/assets/images/projects/sheep.webm";
+import ecommerceVideo from "@/assets/images/projects/mv-vid.webm";
 import swiftcartImage from "@/assets/images/projects/shippo.png";
+import realEstateImage from "@/assets/images/projects/estate1.png";
+import realEstateVideo from "@/assets/images/projects/RealEstate-vid.webm";
+import chessImage from "@/assets/images/projects/chess2.png";
+import chessVideo from "@/assets/images/projects/chess-vid.webm";
 export const projects = [
   {
     id: "sheepAcademy-lms",
@@ -194,9 +199,150 @@ export const projects = [
     ],
     videoData: {
       thumbnail: swiftcartImage,
-      youtubeUrl: skillstackVideo,
+      youtubeUrl: ecommerceVideo,
     },
   },
+  {
+  id: "real-estate-mern",
+  title: "Real Estate Platform",
+  category: "Real Estate",
+  year: "2025",
+  status: "Production",
+  description:
+    "A full-stack real estate platform built with the MERN stack that allows users to list properties, search listings, and directly connect with landlords or buyers.",
+  about:
+    "This MERN-based Real Estate application is designed to simplify property management and house-hunting. It provides a clean, secure, and user-friendly platform where users can create accounts, list properties with images, apply advanced filters, and directly contact landlords or sellers. The platform includes JWT and Google OAuth authentication, full CRUD functionality, and a personalized dashboard for managing listings. Deployed on Render, it reflects a real-world scalable product similar to professional real estate platforms.",
+  image: realEstateImage,
+  liveUrl: "https://mern-real-estate-9rpz.onrender.com/",
+  codeUrl: "https://github.com/hussainjamal760/mern-real-estate",
+  detailsUrl: "/projects/real-estate-mern",
+  stats: "95 Lighthouse Score",
+  technologies: [
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Redux Toolkit",
+    "JWT",
+    "Google OAuth",
+    "Tailwind CSS",
+    "Cloudinary",
+  ],
+  features: [
+    {
+      icon: "Home",
+      title: "Property listing system",
+      description:
+        "Users can create, update, and delete property listings with images and detailed descriptions.",
+    },
+    {
+      icon: "Search",
+      title: "Advanced search & filters",
+      description:
+        "Powerful filtering options to search properties by price, type, location, and availability.",
+    },
+    {
+      icon: "User",
+      title: "Secure authentication",
+      description:
+        "JWT-based authentication with Google OAuth for fast and secure user access.",
+    },
+    {
+      icon: "LayoutDashboard",
+      title: "User dashboard",
+      description:
+        "Personalized dashboard for managing profile details and property listings.",
+    },
+  ],
+  challengesAndSolutions: [
+    {
+      challenge:
+        "Designing a flexible data model for diverse property types and filters",
+      solution:
+        "Created a scalable MongoDB schema with indexed fields for fast querying",
+    },
+    {
+      challenge:
+        "Handling secure image uploads and storage",
+      solution:
+        "Integrated Cloudinary for optimized image hosting and delivery",
+    },
+  ],
+  videoData: {
+    thumbnail: realEstateImage,
+    youtubeUrl: realEstateVideo,
+  },
+},
+{
+  id: "real-time-chess",
+  title: "Real-Time Multiplayer Chess",
+  category: "Game / Realtime",
+  year: "2025",
+  status: "Production",
+  description:
+    "A real-time multiplayer chess game with live gameplay, chat, and spectating powered by Socket.io and Node.js.",
+  about:
+    "This Real-Time Multiplayer Chess Game brings competitive gameplay and social interaction together in a lightweight browser-based experience. Players can challenge friends, spectate ongoing matches, chat in real time, and watch game states update instantly. Built using Node.js, Express.js, Socket.io, and Chess.js, the application maintains synchronized game logic, move validation, captured pieces, and automatic win detection. Deployed on Render, it demonstrates real-time backend architecture and event-driven systems.",
+  image: chessImage,
+  liveUrl: "https://chess-game-gebt.onrender.com/",
+  codeUrl: "https://github.com/hussainjamal760/chess-game",
+  detailsUrl: "/projects/real-time-chess",
+  stats: "96 Lighthouse Score",
+  technologies: [
+    "Node.js",
+    "Express.js",
+    "Socket.io",
+    "Chess.js",
+    "HTML",
+    "CSS",
+    "JavaScript",
+  ],
+  features: [
+    {
+      icon: "Users",
+      title: "Multiplayer gameplay",
+      description:
+        "Play chess with friends in real time with synchronized game states.",
+    },
+    {
+      icon: "Eye",
+      title: "Live spectating",
+      description:
+        "Watch ongoing matches with instant move updates.",
+    },
+    {
+      icon: "MessageCircle",
+      title: "Real-time chat",
+      description:
+        "Chat with players and spectators during live matches using Socket.io.",
+    },
+    {
+      icon: "Crown",
+      title: "Automatic game logic",
+      description:
+        "Move validation, captured pieces, and winner detection handled automatically.",
+    },
+  ],
+  challengesAndSolutions: [
+    {
+      challenge:
+        "Keeping game state synchronized across multiple clients",
+      solution:
+        "Used Socket.io event-driven architecture with authoritative server-side logic",
+    },
+    {
+      challenge:
+        "Ensuring valid chess moves and game rules",
+      solution:
+        "Integrated Chess.js for reliable move validation and game state management",
+    },
+  ],
+  videoData: {
+    thumbnail: chessImage,
+    youtubeUrl: chessVideo,
+  },
+},
+
 ];
 
 // Helper function to get project by ID
