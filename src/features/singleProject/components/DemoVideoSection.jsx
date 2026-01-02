@@ -22,7 +22,9 @@ const getYouTubeEmbedUrl = (url) => {
 const DemoVideoSection = ({ project }) => {
   const videoData = project.videoData;
   const [isPlaying, setIsPlaying] = useState(false);
-  const embedUrl = useMemo(
+  
+  // YouTube embed URL check karein
+  const youtubeEmbedUrl = useMemo(
     () => getYouTubeEmbedUrl(videoData.youtubeUrl),
     [videoData.youtubeUrl]
   );
@@ -39,19 +41,31 @@ const DemoVideoSection = ({ project }) => {
             <div className="w-16 h-0.5 bg-primary-light dark:bg-primary-dark rounded-full"></div>
           </div>
 
-          {/* Video Card with subtle gradient border + glass background */}
+          {/* Video Card */}
           <div className="relative rounded-3xl p-[1px] bg-gradient-to-tr from-primary/40 via-transparent to-secondary/40 dark:from-primary-dark/40 dark:to-secondary-dark/40 shadow-xl">
             <div className="relative rounded-3xl border border-secondary-light dark:border-secondary-dark bg-background/80 dark:bg-background-dark/70 backdrop-blur-md overflow-hidden">
               {/* Video area */}
               <div className="relative aspect-video">
-                {isPlaying && embedUrl ? (
-                  <iframe
-                    className="absolute inset-0 w-full h-full"
-                    src={embedUrl}
-                    title="Demo video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  />
+                {isPlaying ? (
+                  // Logic: Agar YouTube URL hai to iframe dikhaye, nahi to normal Video tag
+                  youtubeEmbedUrl ? (
+                    <iframe
+                      className="absolute inset-0 w-full h-full"
+                      src={youtubeEmbedUrl}
+                      title="Demo video"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
+                  ) : (
+                    <video
+                      className="absolute inset-0 w-full h-full object-cover"
+                      src={videoData.youtubeUrl}
+                      controls
+                      autoPlay
+                    >
+                      Your browser does not support the video tag.
+                    </video>
+                  )
                 ) : videoData.thumbnail ? (
                   <img
                     src={videoData.thumbnail}
