@@ -1,21 +1,22 @@
 // Project data structure
-import skillstackImage from "@/assets/images/projects/skillstack.png";
-import swiftcartImage from "@/assets/images/projects/swiftcart.png";
+import skillstackImage from "@/assets/images/projects/sheep.png";
+import skillstackVideo from "@/assets/images/projects/mv-vid.webm";
+import swiftcartImage from "@/assets/images/projects/shippo.png";
 export const projects = [
   {
-    id: "skillstack-lms",
-    title: "SkillStack",
+    id: "sheepAcademy-lms",
+    title: "Sheep Academy",
     category: "Education",
-    year: "2025",
+    year: "2026",
     status: "Production",
     description:
       "A Learning Management System with VdoCipher secure video protection, Stripe payments, and enrollment analytics for instructors to sell courses without piracy concerns.",
     about:
-      "SkillStack represents a comprehensive Learning Management System designed to revolutionize online education. Built with modern web technologies, this platform addresses the critical challenges faced by instructors in the digital learning space, particularly around content protection and monetization. The system integrates advanced video security through VdoCipher, ensuring that educational content remains protected from piracy while maintaining an excellent user experience for legitimate learners. With seamless Stripe payment integration and detailed enrollment analytics, instructors can focus on creating quality content while the platform handles the technical complexities of course delivery and student management.",
+      "SheepAcademy represents a comprehensive Learning Management System designed to revolutionize online education. Built with modern web technologies, this platform addresses the critical challenges faced by instructors in the digital learning space, particularly around content protection and monetization. The system integrates advanced video security through VdoCipher, ensuring that educational content remains protected from piracy while maintaining an excellent user experience for legitimate learners. With seamless Stripe payment integration and detailed enrollment analytics, instructors can focus on creating quality content while the platform handles the technical complexities of course delivery and student management.",
     image: skillstackImage, // Project screenshot
-    liveUrl: "https://skillstack-frontend-one.vercel.app/",
-    codeUrl: "https://github.com/Ehtesham-Zahid/SkillStack",
-    detailsUrl: "/projects/skillstack-lms",
+    liveUrl: "https://sheep-academy-v1.onrender.com/",
+    codeUrl: "https://github.com/hussainjamal760/MERN-LMS",
+    detailsUrl: "/projects/sheepAcademy-lms",
     stats: "10+ Instructors",
     technologies: [
       "Next.js",
@@ -100,12 +101,12 @@ export const projects = [
     ],
     videoData: {
       thumbnail: skillstackImage,
-      youtubeUrl: "https://www.youtube.com/watch?v=HcY1_XlG02s",
+      youtubeUrl: skillstackVideo,
     },
   },
   {
-    id: "swiftcart-ecommerce",
-    title: "SwiftCart",
+    id: "shippo-ecommerce",
+    title: "Shippo",
     category: "E-commerce",
     year: "2025",
     status: "Production",
@@ -114,9 +115,9 @@ export const projects = [
     about:
       "SwiftCart is a scalable multi-vendor e-commerce platform designed to empower sellers and enhance the shopping experience for buyers. Built with the MERN stack, the application supports secure authentication, Stripe-powered payments, and real-time customer-seller communication through Socket.io. Sellers can manage stores, track orders, and analyze performance while customers enjoy product filtering, wishlist/cl cart functionality, event-based sale timers, and streamlined checkout. The platform includes a powerful admin console for catalog moderation, vendor management, and system-wide analytics.",
     image: swiftcartImage,
-    liveUrl: "https://swift-cartt.vercel.app/",
-    codeUrl: "https://github.com/Ehtesham-Zahid/multivendor-project",
-    detailsUrl: "/projects/swiftcart-ecommerce",
+    liveUrl: "https://multi-vendor-shippo-1.onrender.com/",
+    codeUrl: "https://github.com/hussainjamal760/multi-vendor-shippo",
+    detailsUrl: "/projects/shippo-ecommerce",
     stats: "30+ Active Vendors",
     technologies: [
       "React",
@@ -193,7 +194,7 @@ export const projects = [
     ],
     videoData: {
       thumbnail: swiftcartImage,
-      youtubeUrl: "https://www.youtube.com/watch?v=aCY-DYvhoXk",
+      youtubeUrl: skillstackVideo,
     },
   },
 ];

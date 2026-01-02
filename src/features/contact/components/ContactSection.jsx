@@ -54,14 +54,14 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "ehteshamzahid313@gmail.com",
-      href: "mailto:ehteshamzahid313@gmail.com",
+      value: "hjamal9865@gmail.com",
+      href: "mailto:hjamal9865@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+92 345 4808884",
-      href: "tel:+923454808884",
+      value: "+92 3181792848",
+      href: "tel:+923181792848",
     },
     {
       icon: MapPin,
@@ -75,21 +75,16 @@ const ContactSection = () => {
     {
       icon: Github,
       name: "GitHub",
-      href: "https://github.com/Ehtesham-Zahid",
+      href: "https://github.com/HussainJamal760",
       color: "hover:text-gray-900 dark:hover:text-gray-100",
     },
     {
       icon: Linkedin,
       name: "LinkedIn",
-      href: "https://www.linkedin.com/in/ehtesham-zahid/",
+      href: "https://www.linkedin.com/in/hussain-jamal-b5a76531a/",
       color: "hover:text-blue-600 dark:hover:text-blue-400",
     },
-    {
-      icon: Twitter,
-      name: "Twitter",
-      href: "#",
-      color: "hover:text-blue-500 dark:hover:text-blue-400",
-    },
+   
   ];
 
   return (

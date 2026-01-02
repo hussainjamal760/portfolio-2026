@@ -34,9 +34,9 @@ const Header = () => {
           {/* Left side - Name */}
           <div className="flex-shrink-0 md:justify-self-start">
             <h1 className="text-2xl font-bold tracking-tight text-text1-light dark:text-text1-dark">
-              Ehtesham{" "}
+              Hussain{" "}
               <span className="text-primary-light dark:text-primary-dark">
-                Zahid
+                Jamal
               </span>
             </h1>
           </div>

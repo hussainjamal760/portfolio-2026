@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/shadcn-components/ui/button";
 import { Briefcase, FolderGit2, Users } from "lucide-react";
-import profilePic from "@/assets/images/profile-pic-3.png";
+import profilePic from "@/assets/images/me.png";
 import StatChip from "./StatChip";
 import { Link } from "react-router";
 
@@ -19,7 +19,7 @@ const HeroSection = () => {
   const handleDownloadCV = async () => {
     try {
       // Fetch the PDF file as a blob to ensure we get the actual file, not HTML
-      const response = await fetch("/Ehtesham-Zahid-CV.pdf");
+      const response = await fetch("/Hussain-Jamal-CV.pdf");
       if (!response.ok) {
         throw new Error("Failed to fetch CV");
       }
@@ -29,7 +29,7 @@ const HeroSection = () => {
       const blobUrl = window.URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = blobUrl;
-      link.download = "Ehtesham-Zahid-CV.pdf";
+      link.download = "Hussain-Jamal-CV.pdf";
       document.body.appendChild(link);
       link.click();
 
@@ -40,8 +40,8 @@ const HeroSection = () => {
       console.error("Error downloading CV:", error);
       // Fallback to direct link if fetch fails
       const link = document.createElement("a");
-      link.href = "/Ehtesham-Zahid-CV.pdf";
-      link.download = "Ehtesham-Zahid-CV.pdf";
+      link.href = "/Hussain-Jamal-CV.pdf";
+      link.download = "Hussain-Jamal-CV.pdf";
       link.target = "_blank";
       document.body.appendChild(link);
       link.click();
@@ -59,10 +59,10 @@ const HeroSection = () => {
               Hello, I'm
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-text1-light dark:text-text1-dark">
-              Ehtesham
+              Hussain
               <span className="text-primary-light dark:text-primary-dark">
                 {" "}
-                Zahid
+                Jamal
               </span>
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-text2-light dark:text-text1-dark/80 max-w-2xl">
@@ -128,7 +128,7 @@ const HeroSection = () => {
               <div className="relative mb-6 sm:mb-8">
                 <img
                   src={profilePic}
-                  alt="Ehtesham Zahid profile"
+                  alt="Hussain Jamal profile"
                   className="mx-auto w-72 sm:w-80 lg:w-96 h-auto rounded-full border-2 border-primary-light/20 dark:border-primary-dark/20 shadow-lg"
                   loading="eager"
                   width="300"

@@ -34,8 +34,8 @@ const Sidebar = ({ open, onClose }) => {
         {/* Top bar */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-secondary dark:border-secondary-dark">
           <div className="text-lg font-semibold tracking-tight text-text1 dark:text-text1-dark">
-            Ehtesham{" "}
-            <span className="text-primary dark:text-primary-dark">Zahid</span>
+            Hussain{" "}
+            <span className="text-primary dark:text-primary-dark">Jamal</span>
           </div>
           <button
             onClick={onClose}

@@ -15,25 +15,20 @@ const Footer = () => {
     {
       icon: Github,
       name: "GitHub",
-      href: "https://github.com/Ehtesham-Zahid",
+      href: "https://github.com/Hussain-Jamal",
       color: "hover:text-gray-900 dark:hover:text-gray-100",
     },
     {
       icon: Linkedin,
       name: "LinkedIn",
-      href: "https://www.linkedin.com/in/ehtesham-zahid/",
+      href: "https://www.linkedin.com/in/Hussain-Jamal/",
       color: "hover:text-blue-600 dark:hover:text-blue-400",
     },
-    {
-      icon: Twitter,
-      name: "Twitter",
-      href: "#",
-      color: "hover:text-blue-500 dark:hover:text-blue-400",
-    },
+    
     {
       icon: Mail,
       name: "Email",
-      href: "mailto:ehteshamzahid313@gmail.com",
+      href: "mailto:HussainJamal313@gmail.com",
       color: "hover:text-red-500 dark:hover:text-red-400",
     },
   ];
@@ -62,9 +57,9 @@ const Footer = () => {
             <div className="lg:col-span-2 space-y-4">
               <div>
                 <h3 className="text-2xl font-bold text-text1-light dark:text-text1-dark">
-                  Ehtesham{" "}
+                  Hussain{" "}
                   <span className="text-primary-light dark:text-primary-dark">
-                    Zahid
+                    Jamal
                   </span>
                 </h3>
                 <p className="mt-2 text-text2 dark:text-text1-dark/80 max-w-md">
@@ -135,7 +130,7 @@ const Footer = () => {
         <div className="py-6 border-t border-secondary-light dark:border-secondary-dark">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2 text-text2 dark:text-text1-dark/80">
-              <span>© {currentYear} Ehtesham Zahid. All rights reserved.</span>
+              <span>© {currentYear} Hussain Jamal. All rights reserved.</span>
             </div>
 
             <div className="flex items-center gap-2 text-text2 dark:text-text1-dark/80">
