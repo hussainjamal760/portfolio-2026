@@ -155,7 +155,7 @@ const HeroSection = () => {
                     <FolderGit2 className="h-4 w-4 sm:h-5 sm:w-5 text-orange-500 dark:text-orange-400" />
                   </div>
                   <div className="text-xl sm:text-2xl font-bold text-text1-light dark:text-text1-dark leading-none">
-                    100+
+                    ≈100
                   </div>
                   <div className="text-[11px] sm:text-sm font-medium text-text1-light dark:text-text1-dark whitespace-normal leading-snug px-1">
                     Leetcode Problems
