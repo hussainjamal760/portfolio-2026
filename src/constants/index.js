@@ -16,7 +16,7 @@ export const projects = [
   title: "HostelHub",
   category: "Management System",
   year: "2026",
-  status: "Production",
+  status: "Development",
   description:
     "A complete Hostel Management System with multi-role hierarchy, automated monthly invoicing, complaint tracking, and secure role-based access control for Admin, Owner, Manager, and Students.",
   about:
