@@ -1,4 +1,6 @@
 // Project data structure
+import hostelImage from "@/assets/images/projects/hostel-3.png";
+import hostelDemoVideo from "@/assets/images/projects/hostel-demo.webm";
 import skillstackImage from "@/assets/images/projects/sheep.png";
 import skillstackVideo from "@/assets/images/projects/sheep.webm";
 import ecommerceVideo from "@/assets/images/projects/mv-vid.webm";
@@ -8,6 +10,106 @@ import realEstateVideo from "@/assets/images/projects/RealEstate-vid.webm";
 import chessImage from "@/assets/images/projects/chess2.png";
 import chessVideo from "@/assets/images/projects/chess-vid.webm";
 export const projects = [
+
+  {
+  id: "hostel-management-system",
+  title: "HostelHub",
+  category: "Management System",
+  year: "2026",
+  status: "Production",
+  description:
+    "A complete Hostel Management System with multi-role hierarchy, automated monthly invoicing, complaint tracking, and secure role-based access control for Admin, Owner, Manager, and Students.",
+  about:
+    "HostelHub is a fully structured and scalable Hostel Management System designed to digitize hostel operations from registration to rent collection. The system follows a hierarchical workflow where Admin controls approvals, Owners manage hostels, Managers handle day-to-day operations, and Students interact through secure accounts. The platform automates monthly invoice generation, payment proof verification, complaint management, and real-time role-based visibility. Built with secure authentication and optimized database structure, HostelHub ensures transparency, accountability, and efficient hostel administration.",
+  image: hostelImage, // Project screenshot
+  liveUrl: "https://hostel-management-frontend-ten.vercel.app/",
+  codeUrl: "https://github.com/hussainjamal760/Hostel-Management",
+  detailsUrl: "/projects/hostel-management-system",
+  stats: "5+ Hostels Managed",
+  technologies: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Redux Toolkit",
+    "React Hook Form",
+    "Zod",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
+    "JWT",
+    "Bcrypt",
+    "Cloudinary",
+    "NodeMailer",
+    "Socket.io",
+    "Cron Jobs",
+    "Recharts",
+    "Vercel",
+    "Render"
+  ],
+  features: [
+    {
+      icon: "Shield",
+      title: "Role-based Access Control",
+      description:
+        "Supports Admin, Owner, Manager, and Student roles with strict permission-based routing and JWT authentication."
+    },
+    {
+      icon: "LayoutDashboard",
+      title: "Admin Approval Workflow",
+      description:
+        "Owners create accounts and submit hostel requests. Admin reviews and approves or rejects hostel registrations."
+    },
+    {
+      icon: "Building",
+      title: "Hostel & Room Management",
+      description:
+        "Owners create hostels and assign managers. Managers create rooms, manage occupancy, and maintain student records."
+    },
+    {
+      icon: "FileText",
+      title: "Automated Monthly Invoicing",
+      description:
+        "System generates monthly invoices automatically via cron jobs. Students upload payment proofs for verification."
+    },
+    {
+      icon: "CheckCircle",
+      title: "Payment Verification System",
+      description:
+        "Managers verify or reject payment proofs. Owners have complete financial visibility and monitoring access."
+    },
+    {
+      icon: "MessageCircle",
+      title: "Complaint Management System",
+      description:
+        "Students can submit complaints. Managers respond and resolve issues while Owners monitor activity logs."
+    }
+  ],
+  challengesAndSolutions: [
+    {
+      challenge:
+        "Designing a strict hierarchical approval system without breaking data consistency",
+      solution:
+        "Implemented role-based middleware with MongoDB relational referencing to maintain structured data ownership"
+    },
+    {
+      challenge:
+        "Automating recurring monthly invoices while maintaining accurate financial tracking",
+      solution:
+        "Used Node Cron Jobs with scheduled database triggers to generate invoices and update payment statuses"
+    },
+    {
+      challenge:
+        "Ensuring secure credential distribution for managers and students",
+      solution:
+        "Implemented one-time credential generation with forced password reset on first login and encrypted storage using Bcrypt"
+    }
+  ],
+  videoData: {
+    thumbnail: hostelImage,
+    youtubeUrl: hostelDemoVideo
+  }
+},
+
   {
     id: "sheepAcademy-lms",
     title: "Sheep Academy",
