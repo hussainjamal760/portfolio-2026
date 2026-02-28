@@ -1,6 +1,6 @@
 // Project data structure
 import hostelImage from "@/assets/images/projects/hostel-3.png";
-import hostelDemoVideo from "@/assets/images/projects/hostel-demo.webm";
+import hostelDemoVideo from "@/assets/images/projects/hostelDemoVideo.webm";
 import skillstackImage from "@/assets/images/projects/sheep.png";
 import skillstackVideo from "@/assets/images/projects/sheep.webm";
 import ecommerceVideo from "@/assets/images/projects/mv-vid.webm";
