@@ -1,6 +1,7 @@
 // Project data structure
 import hostelImage from "@/assets/images/projects/hostel-3.png";
 import hostelDemoVideo from "@/assets/images/projects/hostelDemoVideo.webm";
+import comsocDemoVideo from "@/assets/images/projects/comsoc-vid.webm";
 import skillstackImage from "@/assets/images/projects/sheep.png";
 import skillstackVideo from "@/assets/images/projects/sheep.webm";
 import ecommerceVideo from "@/assets/images/projects/mv-vid.webm";
@@ -9,7 +10,120 @@ import realEstateImage from "@/assets/images/projects/estate1.png";
 import realEstateVideo from "@/assets/images/projects/RealEstate-vid.webm";
 import chessImage from "@/assets/images/projects/chess2.png";
 import chessVideo from "@/assets/images/projects/chess-vid.webm";
+import societyImage from "@/assets/images/projects/comsoc1.png";
 export const projects = [
+  {
+    id: "society-management-system",
+    title: "Society Management System",
+    category: "Management Platform",
+    year: "2026",
+    status: "Production",
+    description:
+      "A comprehensive society management platform for university organizations, handling 1500+ concurrent users with optimized performance and enterprise-grade security.",
+    about:
+      "Engineered a full-stack society management platform designed to streamline operations for university organizations. The system handles complex workflows including society registration, event coordination, member management, and financial tracking. Built with Next.js 16, TypeScript, and MongoDB, the platform supports 1500+ concurrent users with <50ms query response time through advanced connection pooling and query optimization. Features multi-layer security with JWT authentication, Zod validation, and comprehensive rate limiting to prevent DoS attacks.",
+    image: societyImage,
+    liveUrl: "https://comsoccomsats.vercel.app/",
+    codeUrl: "https://github.com/hussainjamal760/Society-Management-System-",
+    detailsUrl: "/projects/society-management-system",
+    stats: "1500+ Concurrent Users",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Zod",
+      "JWT",
+      "Bcrypt",
+      "Helmet",
+      "Express Rate Limit",
+      "Cloudinary",
+      "Nodemailer",
+      "Chart.js",
+      "Framer Motion",
+      "GSAP",
+      "jsPDF",
+      "XLSX",
+      "Google Gemini",
+      "Groq SDK",
+      "Docker",
+      "Sentry",
+      "Winston",
+      "Morgan",
+    ],
+    features: [
+      {
+        icon: "Users",
+        title: "Multi-Role Dashboards",
+        description:
+          "Specialized dashboards for Admin, Society Head, and Member roles with role-based access control (RBAC) and permission management.",
+      },
+      {
+        icon: "Calendar",
+        title: "Real-Time Event Management",
+        description:
+          "Complete event lifecycle management with QR code-based attendance tracking, ticketing system, and automated email notifications.",
+      },
+      {
+        icon: "Shield",
+        title: "Enterprise-Grade Security",
+        description:
+          "Multi-layer security with JWT authentication, Zod schema validation, Helmet CSP, XSS protection, MongoDB sanitization, and 6 specialized rate limiters.",
+      },
+      {
+        icon: "Database",
+        title: "Optimized Performance",
+        description:
+          "MongoDB connection pooling (150 max connections) supporting 1500+ concurrent users with <50ms query response time and 60% faster API responses.",
+      },
+      {
+        icon: "FileText",
+        title: "Dynamic Form Builder",
+        description:
+          "Flexible form creation system for event registrations and feedback collection with PDF/Excel report generation capabilities.",
+      },
+      {
+        icon: "DollarSign",
+        title: "Financial Management",
+        description:
+          "Comprehensive sponsorship and budget tracking with financial oversight tools and automated approval workflows.",
+      },
+    ],
+    challengesAndSolutions: [
+      {
+        challenge:
+          "Supporting 1500+ concurrent users without performance degradation or database bottlenecks",
+        solution:
+          "Implemented MongoDB connection pooling (150 max connections, 225 concurrent operations) with N+1 query optimization, reducing API response time by 60%",
+      },
+      {
+        challenge:
+          "Preventing DoS attacks and resource exhaustion while maintaining user experience",
+        solution:
+          "Built 6 specialized rate limiters (auth: 10/15min, global: 100/15min, member ops: 100/hr) with express-slow-down and request timeout management (30s)",
+      },
+      {
+        challenge:
+          "Managing complex multi-stage approval workflows across different user roles",
+        solution:
+          "Designed state machine-based approval system with automated email notifications via Nodemailer and comprehensive audit logging with Winston",
+      },
+      {
+        challenge:
+          "Ensuring data security and preventing common web vulnerabilities at scale",
+        solution:
+          "Implemented multi-layer security: Bcrypt password hashing, JWT with refresh tokens, Zod validation across 10+ endpoints, Helmet security headers, CORS enforcement, and MongoDB query sanitization",
+      },
+    ],
+    videoData: {
+      thumbnail: societyImage,
+      youtubeUrl: comsocDemoVideo,
+    },
+  },
 
   {
   id: "hostel-management-system",
