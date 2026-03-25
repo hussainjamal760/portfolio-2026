@@ -132,7 +132,7 @@ export const projects = [
     year: "2026",
     status: "Production",
     description:
-      "A production-ready, enterprise-grade hostel management platform serving multiple user roles with real-time operations, automated workflows, and handling 10,000+ concurrent users with sub-200ms response times.",
+      "A production-ready, enterprise-grade hostel management platform serving multiple user roles with real-time operations, automated workflows, and handling 1500+ concurrent users with sub-200ms response times.",
     about:
       "Hostelite is an architected full-stack hostel management system built with modern web technologies and enterprise-grade architecture. The platform features a monorepo structure with shared packages for types, validators, and constants, ensuring type safety and consistency across the entire codebase. With 12+ feature modules including auth, payments, hostels, rooms, students, complaints, and expenses, the system handles complex workflows from registration to automated billing. Built with Next.js 16, React 19, TypeScript, and MongoDB, it implements multi-layer security with JWT authentication, RBAC, rate limiting, and optimized database queries achieving 70% faster query times through strategic indexing and connection pooling.",
     image: hostelImage,
