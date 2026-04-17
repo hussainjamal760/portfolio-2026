@@ -62,7 +62,7 @@ const HeroSection = () => {
               Hussain
               <span className="text-primary-light dark:text-primary-dark">
                 {" "}
-                Jamal
+                Jamal=
               </span>
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-text2-light dark:text-text1-dark/80 max-w-2xl">
