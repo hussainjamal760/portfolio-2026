@@ -240,8 +240,8 @@ export const projects = [
     },
   },
   {
-  id: "loopbazar-ecommerce-platform",
-  title: "LoopBazar",
+  id: "loopbazar",
+  title: "LoopBazar - AI E-Commerce Platform",
   category: "AI E-Commerce Platform",
   year: "2026",
   status: "Hackathon Winner",
