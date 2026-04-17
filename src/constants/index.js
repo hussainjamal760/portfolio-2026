@@ -11,6 +11,8 @@ import realEstateVideo from "@/assets/images/projects/RealEstate-vid.webm";
 import chessImage from "@/assets/images/projects/chess2.png";
 import chessVideo from "@/assets/images/projects/chess-vid.webm";
 import societyImage from "@/assets/images/projects/comsoc1.png";
+import loopbazarImage from "@/assets/images/projects/loop-lab-img.png";
+import loopbazarVideo from "@/assets/images/projects/loop-lab-vid.mp4";
 export const projects = [
   {
     id: "society-management-system",
@@ -237,6 +239,118 @@ export const projects = [
       youtubeUrl: hostelDemoVideo,
     },
   },
+  {
+  id: "loopbazar-ecommerce-platform",
+  title: "LoopBazar",
+  category: "AI E-Commerce Platform",
+  year: "2026",
+  status: "Hackathon Winner",
+  description:
+    "A production-ready AI-powered multi-vendor e-commerce platform with real-time chat, intelligent search, and dynamic pricing, supporting modern marketplace operations.",
+    
+  about:
+    "Built a full-stack multi-vendor e-commerce platform combining Next.js 16 frontend with Express and MongoDB backend. The system supports buyer, seller, and admin roles with complete marketplace workflows including product management, order processing, and analytics. Integrated AI modules such as dynamic pricing suggestions, intelligent search autocomplete, and a context-aware customer support chatbot. Designed with production-grade practices including rate limiting, role-based access control, health monitoring, and scalable deployment on Vercel, Render, and Railway.",
+
+  image: loopbazarImage,
+  liveUrl: "https://web-hackathon-loop-lab.vercel.app/",
+  codeUrl: "https://github.com/hussainjamal760/Web_Hackathon",
+  detailsUrl: "/projects/loopbazar",
+  
+  stats: "3 Roles + AI Integration",
+
+  technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
+    "Redux Toolkit",
+    "Tailwind CSS",
+    "Socket.IO",
+    "JWT",
+    "Zod",
+    "Stripe",
+    "Cloudinary",
+    "Groq API",
+    "Passport OAuth",
+    "Winston",
+    "Helmet",
+    "CORS",
+  ],
+
+  features: [
+    {
+      icon: "ShoppingCart",
+      title: "Multi-Vendor Marketplace",
+      description:
+        "Complete buyer, seller, and admin workflows including product management, cart, wishlist, checkout, and order lifecycle handling.",
+    },
+    {
+      icon: "MessageCircle",
+      title: "Real-Time Chat System",
+      description:
+        "Buyer-seller communication powered by Socket.IO with message status tracking (sent, seen, resolved) and image support.",
+    },
+    {
+      icon: "Brain",
+      title: "AI Dynamic Pricing",
+      description:
+        "Hybrid pricing engine using heuristics + LLM to suggest optimal product pricing with fallback safety and confidence scoring.",
+    },
+    {
+      icon: "Search",
+      title: "Intelligent Search Autocomplete",
+      description:
+        "Search suggestions powered by product relevance, categories, and search history signals for improved discovery.",
+    },
+    {
+      icon: "Bot",
+      title: "AI Customer Support",
+      description:
+        "Context-aware chatbot that assists buyers with orders, refunds, and shipping, with escalation handling for complex queries.",
+    },
+    {
+      icon: "Shield",
+      title: "Production-Grade Security",
+      description:
+        "Secure backend with JWT authentication, role-based access control, rate limiting, Helmet protection, and API throttling.",
+    },
+  ],
+
+  challengesAndSolutions: [
+    {
+      challenge:
+        "Ensuring reliable AI responses without breaking core platform functionality",
+      solution:
+        "Implemented hybrid AI architecture with deterministic fallback models and strict validation, ensuring system stability even if LLM fails",
+    },
+    {
+      challenge:
+        "Handling real-time communication between buyers and sellers efficiently",
+      solution:
+        "Integrated Socket.IO with optimized event handling and message state tracking for scalable real-time chat",
+    },
+    {
+      challenge:
+        "Maintaining secure and scalable API under high request loads",
+      solution:
+        "Applied rate limiting, JWT-based auth, role guards, and API throttling to prevent abuse and ensure stability",
+    },
+    {
+      challenge:
+        "Improving product discovery and user experience in large datasets",
+      solution:
+        "Built intelligent autocomplete system combining prefix matching with search history signals for relevance ranking",
+    },
+  ],
+
+  videoData: {
+    thumbnail: loopbazarImage,
+    youtubeUrl: loopbazarVideo,
+  },
+},
 
   {
     id: "sheepAcademy-lms",
