@@ -211,7 +211,7 @@ export const projects = [
     challengesAndSolutions: [
       {
         challenge:
-          "Scaling to handle 10,000+ concurrent users while maintaining sub-200ms response times",
+          "Scaling to handle 1000+ concurrent users while maintaining sub-200ms response times",
         solution:
           "Implemented MongoDB connection pooling (maxPoolSize: 10), strategic compound indexing reducing query time by 70%, lean queries for 60% faster reads, and optimized aggregation pipelines for dashboard analytics",
       },

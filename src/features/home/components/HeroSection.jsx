@@ -19,7 +19,7 @@ const HeroSection = () => {
   const handleDownloadCV = async () => {
     try {
       // Fetch the PDF file as a blob to ensure we get the actual file, not HTML
-      const response = await fetch("/Hussain-Jamal-CV.pdf");
+      const response = await fetch("/cv.pdf");
       if (!response.ok) {
         throw new Error("Failed to fetch CV");
       }
@@ -29,7 +29,7 @@ const HeroSection = () => {
       const blobUrl = window.URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = blobUrl;
-      link.download = "Hussain-Jamal-CV.pdf";
+      link.download = "cv.pdf";
       document.body.appendChild(link);
       link.click();
 
@@ -40,8 +40,8 @@ const HeroSection = () => {
       console.error("Error downloading CV:", error);
       // Fallback to direct link if fetch fails
       const link = document.createElement("a");
-      link.href = "/Hussain-Jamal-CV.pdf";
-      link.download = "Hussain-Jamal-CV.pdf";
+      link.href = "/cv.pdf";
+      link.download = "cv.pdf";
       link.target = "_blank";
       document.body.appendChild(link);
       link.click();
@@ -62,7 +62,7 @@ const HeroSection = () => {
               Hussain
               <span className="text-primary-light dark:text-primary-dark">
                 {" "}
-                Jamal=
+                Jamal
               </span>
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-text2-light dark:text-text1-dark/80 max-w-2xl">
