@@ -105,7 +105,6 @@ const ContactSection = () => {
         </div>
 
         <div className="mt-16 grid lg:grid-cols-2 gap-12 lg:gap-16">
-          {/* Left: Contact Form */}
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-text1-light dark:text-text1-dark mb-4">
