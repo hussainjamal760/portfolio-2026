@@ -93,7 +93,6 @@ const ContactSection = () => {
       className="w-full bg-background dark:bg-background-dark"
     >
       <div className="w-11/12 2xl:w-5/6 mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-text1-light dark:text-text1-dark">
             Get In Touch
